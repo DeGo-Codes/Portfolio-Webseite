@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Dennis Gorski</title>
+    <link rel="stylesheet" href="Stylesheets/Stylesheet-Portfolio.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="about.html">Über mich</a>
+            <a href="projekte.html">Projekte & Zertifikate</a>
+            <a href="kontakt.html" class="aktiv">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-box">
+            <h2>Kontakt</h2>
+            <p class="fokus-text">Haben Sie Fragen zu meinem Profil oder möchten mich zu einem Kennenlernen einladen? Ich freue mich auf Ihre Nachricht.</p>
+
+            <form action="mailto:kontakt@dego-codes.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Kontaktformular</legend>
+
+                    <label for="name">Ihr Name *</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="Name" 
+                        placeholder="z. B. Max Mustermann" 
+                        required
+                    >
+
+                    <label for="email">Ihre E-Mail-Adresse *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="E-Mail" 
+                        placeholder="z. B. recruiting@unternehmen.de" 
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+" 
+                        title="Bitte geben Sie eine vollständige E-Mail-Adresse mit '@' und einem '.' ein." 
+                        required
+                    >
+
+                    <label for="betreff">Betreff</label>
+                    <input 
+                        type="text" 
+                        id="betreff" 
+                        name="Betreff" 
+                        placeholder="z. B. Einladung zum Vorstellungsgespräch"
+                    >
+
+                    <label for="nachricht">Ihre Nachricht *</label>
+                    <textarea 
+                        id="nachricht" 
+                        name="Nachricht" 
+                        placeholder="Ihre Nachricht an mich..." 
+                        required
+                    ></textarea>
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Nachricht senden">
+                        <input type="reset" value="Zurücksetzen">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dennis Gorski | <a href="kontakt.html">Kontakt</a></p>
+    </footer>
+
+</body>
+</html>
